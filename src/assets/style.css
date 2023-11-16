@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+#header {
+    background-color: #000;
+    height: 46px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav,
+.subnav {
+    list-style: none;
+
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
+    line-height: 46px;
+    position: relative;
+
+}
+
+#nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    padding: 0 24px;
+    display: block;
+
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav li:hover a,
+#nav>li:hover>a {
+    color: #fff;
+    background-color: darkgrey;
+
+
+
+}
+
+#nav .subnav {
+    min-width: 160px;
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+
+}
+
+#nav .subnav a {
+
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+
+}
+
+#header .search-btn {
+    float: right;
+    line-height: 46px;
+    padding: 0 21px;
+}
+
+#header .icon {
+    color: #fff;
+    font-size: 20px;
+
+}
+
+#header .search-btn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#slider {
+
+    margin-top: 46px;
+}
+
+#slider img {
+    position: relative;
+    width: 100%;
+
+}
+
+#slider #content {
+    margin-top: -348px;
+    position: absolute;
+    color: mediumspringgreen;
+    right: 40%;
+    text-align: center;
+}
+
+.header {
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}
+
+#contentner .w3-content {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+
+}
+
+#contentner .section-subhead {
+    padding: 15px 0;
+    text-align: center;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+#contentner .section-head {
+    padding: 40px 0;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+#contentner .text {
+    text-align: justify;
+    line-height: 1.4;
+
+}
+
+.picture1 img {
+    width: 153px;
+
+
+}
+
+#contentner .picture1 {
+    float: left;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    padding-left: 99px;
+    width: 33.33333%;
+    text-align: center;
+}
+
+#picture .img {
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+#picture {
+    overflow: hidden;
+}
+
+#bigmain {
+    background-color: #000;
+    padding-bottom: 80px;
+}
+
+#bigmain .w3-content {
+    color: #fff;
+    height: 100%;
+}
+
+#bigmain .buy-ticket {
+    background-color: #fff;
+    color: #000;
+
+}
+
+.buy-ticket li {
+    border-bottom: 1px solid #b1aaaa;
+    padding: 10px 10px;
+}
+
+.buy-ticket .small {
+    display: inline-block;
+    padding: 0 20px;
+    background-color: #f44336;
+    line-height: 25px;
+    color: #fff;
+}
+
+.buy-ticket .smaller {
+    background-color: #000;
+    color: #fff;
+    padding: 4px;
+    float: right;
+    border-radius: 50%;
+    width: 24px;
+    text-align: center;
+}
+
+.charbig {
+    margin-top: 30px;
+
+
+}
+
+.charbig .charsmall {
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+    background-color: #fff;
+
+}
+
+.charbig .charimg {
+    width: 100%;
+
+}
+
+.charsmall .charimg:hover {
+    opacity: 0.6;
+}
+
+.charbig .ticked1,
+.charbig .h3text,
+.charbig .h3time,
+.charbig .h3bot {
+    color: #000;
+    margin-top: 15px;
+
+}
+
+.charsmall .ticked1 {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+
+}
+
+.charbig .ticked1:hover {
+    background-color: #ccc;
+    color: #000;
+    border: 1px solid #ccc;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgb(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+    max-width: calc(100% - 32px);
+    animation: modalFaceIn ease .8s;
+}
+
+.modal .ti1 {
+    position: absolute;
+    right: 0;
+    padding: 7px;
+    color: #fff;
+
+}
+
+.modal .ti1:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.container-header {
+    padding: 64px 0;
+    background-color: #009688;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+
+}
+
+
+.body-modal .cart-modal {
+    display: block;
+    padding: 15px 9px;
+}
+
+.iconti {
+    padding-right: 10px;
+
+}
+
+.body-modal {
+    padding: 8px 8px;
+}
+
+.modal-input {
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    border: 1px solid #ccc
+}
+
+#modal-button {
+    padding: 20px 10px 20px 10px;
+    margin-bottom: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 98%;
+    background: #009689;
+    border: 1px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#modal-button:hover {
+    background-color: burlywood;
+    color: #000;
+}
+
+.footer-modal {
+    text-align: right;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.infor-content {
+
+    display: inline-block;
+}
+
+.infor-content li {
+    padding: 23px 0 8px 0;
+    list-style: none;
+
+}
+
+.icontent {
+    padding-right: 10px;
+
+}
+
+.subnav1 {
+
+    float: right;
+    margin-right: 30px;
+
+}
+
+.subnav1 .subnav2 {
+    display: block;
+    margin-bottom: 23px;
+
+    padding: 10px 183px 10px 4px;
+}
+
+.submit-contact {
+    padding: 10px 10px;
+    background-color: #000;
+    color: #fff;
+    right: 0px;
+}
+
+.submit-contact:hover {
+    background-color: #b1aaaa;
+    color: #000;
+    cursor: pointer;
+}
+
+.map-content img {
+
+    margin-top: 100px;
+    width: 100%;
+
+}
+
+.footer-content {
+    text-align: center;
+    line-height: 200px;
+    height: 200px;
+}
+
+.footer-content i {
+    margin: 0 7px;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+
+@keyframes modalFaceIn {
+    from {
+        transform: translateY(-100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
